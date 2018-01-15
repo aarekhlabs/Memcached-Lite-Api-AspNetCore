@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>AarekhLabs.AspNetCore.Api.Memcached</AssemblyName>
+    <RootNamespace>AarekhLabs.AspNetCore.Api.Memcached</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0.0</Version>
+    <Authors>AarekhLabs</Authors>
+    <Company>AarekhLabs</Company>
+    <Description>A .net core 2.0 based REST API interface for memcached</Description>
+    <Copyright>2018 (c) AarekhLabs</Copyright>
+    <PackageLicenseUrl>https://github.com/aarekhlabs/Memcached-Lite-Api-AspNetCore/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/aarekhlabs/Memcached-Lite-Api-AspNetCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aarekhlabs/Memcached-Lite-Api-AspNetCore</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>AspNetCore, WebApi, Memcached</PackageTags>
+    <PackageReleaseNotes>Initial Release 1.0.0.0
+
+- Provides simple REST interface to Memcached.</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\api-doc.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\api-doc.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EnyimMemcachedCore" Version="2.1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>
